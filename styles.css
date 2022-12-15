@@ -13,6 +13,7 @@ html {
   font-size: calc(15px + 0.390625vw);
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  background: #f5f5f5;
 }
 
 /* Navbar */
@@ -435,6 +436,65 @@ html {
   border-radius: 8px;
 }
 
+/* Footer */
+
+.footer {
+  background: #f5f5f5;
+  padding: 5%;
+  font-family: "Play", sans-serif;
+  text-align: center;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-social-icons {
+  width: 100%;
+  margin: 2em 3%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 1.1rem;
+}
+
+.footer-social-icons a {
+  text-decoration: none;
+  margin: 0 0.3em;
+}
+
+.footer-social-icons a i {
+  font-size: 3em;
+  margin: 0% 1%;
+}
+
+.footer-row {
+  margin-top: 1em;
+}
+
+.footer-social-container {
+  border-bottom: 1px solid #373636;
+}
+
+.footer-card {
+  display: flex;
+  text-align: left;
+  padding: 0.3em;
+}
+
+.footer-card-text span {
+  font-size: 15px;
+}
+
+.footer-card-icon {
+  color: #e37578;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+
+.footer-card-text {
+  padding-left: 15px;
+}
+
 @media (min-width: 600px) {
   #mobile-menu {
     display: none;
@@ -471,6 +531,20 @@ html {
 
   .price-submenu-price {
     padding: 0.5rem;
+  }
+
+  /* Footer */
+
+  .footer {
+    padding: 30px 0px;
+  }
+
+  .footer-social-icons a i {
+    margin: 1% 0%;
+  }
+
+  .footer-row {
+    display: flex;
   }
 }
 
