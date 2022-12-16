@@ -13,7 +13,7 @@ html {
   font-size: calc(15px + 0.390625vw);
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
-  background: #f5f5f5;
+  background: #f9f2f3;
 }
 
 /* Navbar */
@@ -25,8 +25,8 @@ html {
   align-items: center;
   line-height: 1rem;
   overflow: hidden;
-  background-color: #f5f5f5;
-  padding-top: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   padding-right: 10px;
 }
 
@@ -117,6 +117,7 @@ html {
 
 .hero {
   overflow: hidden;
+  margin-top: 3px;
   background-color: #fff;
 }
 
@@ -127,6 +128,10 @@ html {
 }
 
 /* introduction */
+
+.introduction {
+  background-color: #fff;
+}
 
 .introduction__container {
   display: flex;
@@ -142,6 +147,11 @@ html {
 .introduction__content h1 {
   font-family: "Roboto Condensed";
   letter-spacing: 0.2em;
+  font-size: 1.7em;
+}
+
+.prestations h1 {
+  font-size: 1.6em;
 }
 
 .introduction__content h2 {
@@ -150,7 +160,7 @@ html {
 }
 
 .introduction__content p {
-  margin-top: 1em;
+  margin: 1em 0;
 }
 
 /* Prestations */
@@ -206,20 +216,33 @@ html {
 }
 
 .contact__card__container {
+  border-radius: 15px;
   background-color: #fff;
-  margin-top: 2em;
+  margin-top: -2.5em;
   padding-top: 2em;
   padding-bottom: 2em;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+.contact__card__container a,
+.contact__card__container i {
+  color: #e37578;
+}
+
+.contact__card__container a {
+  color: #e37578;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .contact__card__icon {
-  position: absolute;
-  margin-top: -33px;
-  margin-bottom: 60px;
-  left: 40%;
+  display: block;
+  margin: 10px auto;
+  width: 80px;
+}
+
+.contact__card__icon .fa-circle {
+  color: #f18d8f;
 }
 
 .contact p {
@@ -241,9 +264,6 @@ html {
   margin-top: 1em;
   padding: 0.5em;
   border-style: none;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-  box-shadow: 0 8px 6px -6px black;
 }
 
 .contact button:hover,
@@ -254,7 +274,6 @@ html {
 /* Contact form */
 
 .contactform {
-  background-image: linear-gradient(#f5f5f5, #f9f2f3);
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -274,9 +293,13 @@ html {
 }
 
 .contactform__information p,
-.contactform__form h1 {
+.contactform__form h2 {
   margin-left: auto;
   margin-right: auto;
+}
+
+.contactform__form h2 {
+  margin-top: 0.2em;
 }
 
 .contactform__information a,
@@ -318,9 +341,9 @@ html {
 
 .contactform__form input,
 .contactform__form textarea {
-  margin: 0.5em;
+  margin: 0.5em 1em;
   text-decoration: none;
-  padding: 5px;
+  padding: 15px;
   background-color: #f5f5f5;
   border-style: none;
 }
@@ -335,12 +358,6 @@ html {
   max-width: 100px;
 }
 
-.fa-square-instagram,
-.fa-square-facebook,
-.fa-linkedin {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-}
-
 .fa-square-instagram {
   color: #d03572;
 }
@@ -349,15 +366,7 @@ html {
   color: #3b5998;
 }
 
-.fa-linkedin {
-  color: #0072b1;
-}
-
 /* Prices */
-
-.prices {
-  background-image: linear-gradient(#f5f5f5, #f9f2f3);
-}
 
 .prices-container {
   display: flex;
@@ -376,10 +385,13 @@ html {
   overflow: hidden;
 }
 
-.price-box h2 {
-  text-align: center;
+.price-box h3 {
+  padding: 0px 16px;
   margin-top: 0.5em;
-  margin-bottom: 0.5em;
+}
+
+.price-box h3 i {
+  color: #e37578;
 }
 
 .price-item {
@@ -421,6 +433,7 @@ html {
   background-color: #f18d8f;
   color: #f5f5f5;
   margin: auto;
+
   padding: 2%;
   border-radius: 8px;
 }
@@ -432,6 +445,10 @@ html {
   padding-right: 2%;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.price-nav {
+  margin-top: 1em;
 }
 
 .price-note {
@@ -449,7 +466,7 @@ html {
 /* Footer */
 
 .footer {
-  background: #f5f5f5;
+  background: #f9f2f3;
   padding: 5%;
   font-family: "Play", sans-serif;
   text-align: center;
@@ -464,11 +481,13 @@ html {
   padding: 0.6% 0%;
   color: gray;
   font-size: 1.1rem;
+  flex: 1 1 0;
+  text-align: left;
 }
 
 .footer-social-icons a {
   text-decoration: none;
-  margin: 0 0.3em;
+  margin: 0 3px;
 }
 
 .footer-social-icons a i {
@@ -482,6 +501,14 @@ html {
 
 .footer-social-container {
   border-bottom: 1px solid #373636;
+  display: flex;
+}
+
+.footer-social-container p {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: right;
+  flex: 1 1 0;
 }
 
 .footer-card {
@@ -527,14 +554,6 @@ html {
   .contact__container {
     padding: 55px 30px 25px;
     position: relative;
-  }
-
-  .contact__card__icon {
-    position: absolute;
-    display: inline-block;
-    font-size: 25px;
-    margin-top: -20px;
-    margin-bottom: 60px;
   }
 
   /* contact form */
@@ -593,8 +612,8 @@ html {
   }
 
   .contact__card__container {
-    min-height: 150px;
-    margin-top: 45px;
+    min-height: 100px;
+    padding-bottom: 0.5em;
   }
 
   .contact__card__icon {
@@ -637,12 +656,6 @@ html {
 
   .introduction__content {
     width: 50%;
-  }
-
-  /* Prices */
-
-  .price-submenu-price {
-    padding: 1rem;
   }
 
   /* Contact form */
